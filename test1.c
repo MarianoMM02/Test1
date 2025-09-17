@@ -1,7 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-void main() {
-    printf("Hello, World!\n");
-    exit(0);
+void main()
+{
+    int n;
+
+    printf("Ingrese un numero:\n");
+    scanf("%d", &n);
+    printf("El numero ingresado es: %d\n", n);
+    return 0;
+
 }

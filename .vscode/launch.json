@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "cppdbg",
+      "request": "launch",
+      "name": "Debug test1.c",
+      "program": "${workspaceFolder}/a.out",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build test1.c"
+    }
+  ]
+}
+{
+  "tasks": [
+    {
+      "label": "build test1.c",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "test1.c",
+        "-o",
+        "a.out"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
